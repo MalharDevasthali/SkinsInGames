@@ -14,6 +14,7 @@ namespace UIServices
 
         public GameObject HighScorePanel;
         public GameObject Buttons;
+        public GameObject SkinSelectionPanel;
         public TextMeshProUGUI highScoreText;
         public TextMeshProUGUI recordHolderText;
         public GameObject IntroPanel;
@@ -45,7 +46,7 @@ namespace UIServices
         public void EnterName()
         {
             IntroPanel.SetActive(false);
-            Buttons.SetActive(true);
+            SkinSelectionPanel.SetActive(true);
             GameService.instance.SetCurrentPlayerName(inputName.text);
             Debug.Log("LobbyUI,EnterName()");
         }

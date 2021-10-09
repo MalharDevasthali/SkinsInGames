@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Commons;
 using TankSO;
+using GameServices;
 
 
 namespace TankServices
@@ -21,20 +22,38 @@ namespace TankServices
         {
 
             await new WaitForSeconds(tankSpawnDelay);
-            CreateTank(); // if you want multiple players call CreateTanks() method mutltiple times
+            CreateTank(GameService.instance.GetCurrentTankype()); // if you want multiple players call CreateTanks() method mutltiple times
 
             //tankModel do not have Mono as parent so we have to pass it using contructor's returned object
             //as view has Mono as Parent we can drag drop it via inspector
         }
-        public void CreateTank()
+        public void CreateTank(TankType tankType)
         {
-            int rand = Random.Range(0, tankList.tanks.Length);
-            tankScriptable = tankList.tanks[rand];
 
+            tankScriptable = GetTankAsPerType(tankType);
+            Debug.Log(tankScriptable);
             TankModel tankModel = new TankModel(tankScriptable, tankList);
             currentTankModel = tankModel;
             tankController = new TankController(tankModel, tankScriptable.tankView);
             tanks.Add(tankController);
+        }
+        private TankScriptableObject GetTankAsPerType(TankType tankType)
+        {
+            Debug.Log(tankType);
+            if (tankType == TankType.BlueTank)
+            {
+                return tankScriptable = tankList.tanks[0];
+            }
+            else if (tankType == TankType.GreenTank)
+            {
+                return tankScriptable = tankList.tanks[1];
+            }
+            else if (tankType == TankType.RedTank)
+            {
+                return tankScriptable = tankList.tanks[2];
+            }
+
+            return tankList.tanks[0];
         }
 
         public TankModel GetCurrentTankModel()

@@ -15,6 +15,7 @@ namespace GameServices
         private int highScore;
         private string recordHolderName;
         private float currentWave;
+        private static TankType currentTankType;
 
 
         private void Start()
@@ -69,6 +70,14 @@ namespace GameServices
         public string GetRecordHolder()
         {
             return PlayerPrefs.GetString("recordHolderName");
+        }
+        public void SetCurrentTankType(TankType tankType)
+        {
+            currentTankType = tankType;
+        }
+        public TankType GetCurrentTankype()
+        {
+            return currentTankType;
         }
     }
 }
