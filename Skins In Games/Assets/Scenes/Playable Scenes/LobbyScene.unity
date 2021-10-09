@@ -134,8 +134,8 @@ GameObject:
   - component: {fileID: 82287359}
   - component: {fileID: 82287358}
   - component: {fileID: 82287362}
-  - component: {fileID: 82287363}
   - component: {fileID: 82287365}
+  - component: {fileID: 82287364}
   m_Layer: 5
   m_Name: LobbyUI
   m_TagString: Untagged
@@ -322,7 +322,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &82287363
+--- !u!114 &82287364
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -331,7 +331,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 82287357}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5031ec44421b0e4c94156ac54c85439, type: 3}
+  m_Script: {fileID: 11500000, guid: f9178cf77c695914c9e246db25b4aa9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   click: {fileID: 8300000, guid: b3b5790f4929211438c140bcf0d0f632, type: 3}
@@ -1213,7 +1213,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 82287363}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadLevel
         m_Mode: 1
         m_Arguments:
@@ -1438,7 +1438,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 82287363}
+      - m_Target: {fileID: 82287364}
         m_MethodName: RedTank
         m_Mode: 1
         m_Arguments:
@@ -2676,7 +2676,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 82287363}
+      - m_Target: {fileID: 82287364}
         m_MethodName: GreenTank
         m_Mode: 1
         m_Arguments:
@@ -2807,7 +2807,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 82287363}
+      - m_Target: {fileID: 0}
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
@@ -3944,7 +3944,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 82287363}
+      - m_Target: {fileID: 82287364}
         m_MethodName: BlueTank
         m_Mode: 1
         m_Arguments:

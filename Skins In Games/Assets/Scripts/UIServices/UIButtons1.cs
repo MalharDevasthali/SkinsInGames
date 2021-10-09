@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace UIServices
 {
-    public class UIButtons : MonoBehaviour
+    public class UIButtons1 : MonoBehaviour
     {
         public AudioClip click;
         public AudioSource audioSource;
@@ -46,5 +46,20 @@ namespace UIServices
         }
 
         // Write three button definations here
+        public void BlueTank()
+        {
+            GameService.instance.SetCurrentTankType(TankServices.TankType.BlueTank);
+            SceneManager.LoadScene(3);
+        }
+        public void GreenTank()
+        {
+            GameService.instance.SetCurrentTankType(TankServices.TankType.GreenTank);
+            SceneManager.LoadScene(3);
+        }
+        public void RedTank()
+        {
+            GameService.instance.SetCurrentTankType(TankServices.TankType.RedTank);
+            SceneManager.LoadScene(3);
+        }
     }
 }
