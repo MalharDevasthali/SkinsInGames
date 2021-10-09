@@ -14,11 +14,9 @@ public class CameraController : GenericMonoSingleton<CameraController>
     protected override void Awake()
     {
         base.Awake();
-        // virtualCamera = GetComponent<CinemachineVirtualCamera>();
     }
     public void SetTarget(Transform _taregt)
     {
-        //  virtualCamera.Follow = taregt;
         target = _taregt;
         hasTargetSet = true;
     }
