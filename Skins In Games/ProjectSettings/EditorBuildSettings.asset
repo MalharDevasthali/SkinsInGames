@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/LobbyScene.unity
+    path: Assets/Scenes/Playable Scenes/LobbyScene.unity
     guid: 5e2bd00870a102f4a8f25c8bcd5a4c99
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
+    path: Assets/Scenes/Tasks/Task - 1.unity
+    guid: 1c569ee020685ac45b57a0cf99cbede2
+  - enabled: 1
+    path: Assets/Scenes/Tasks/Task - 2.unity
+    guid: 158433637169af746a70cdd2a3548fcc
+  - enabled: 1
+    path: Assets/Scenes/Playable Scenes/Level1.unity
     guid: 37961ba4d27bd46428d20c2ffe403dc3
   m_configObjects: {}

@@ -44,20 +44,5 @@ namespace UIServices
             audioSource.Play();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-        public void BlueTank()
-        {
-            GameService.instance.SetCurrentTankType(TankServices.TankType.BlueTank);
-            SceneManager.LoadScene(1);
-        }
-        public void GreenTank()
-        {
-            GameService.instance.SetCurrentTankType(TankServices.TankType.GreenTank);
-            SceneManager.LoadScene(1);
-        }
-        public void RedTank()
-        {
-            GameService.instance.SetCurrentTankType(TankServices.TankType.RedTank);
-            SceneManager.LoadScene(1);
-        }
     }
 }
