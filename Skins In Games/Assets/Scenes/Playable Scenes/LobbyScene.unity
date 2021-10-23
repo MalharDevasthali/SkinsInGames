@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 82287358}
   - component: {fileID: 82287362}
   - component: {fileID: 82287365}
-  - component: {fileID: 82287364}
+  - component: {fileID: 82287363}
   m_Layer: 5
   m_Name: LobbyUI
   m_TagString: Untagged
@@ -322,7 +322,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &82287364
+--- !u!114 &82287363
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1438,7 +1438,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 82287364}
+      - m_Target: {fileID: 82287363}
         m_MethodName: RedTank
         m_Mode: 1
         m_Arguments:
@@ -2676,7 +2676,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 82287364}
+      - m_Target: {fileID: 82287363}
         m_MethodName: GreenTank
         m_Mode: 1
         m_Arguments:
@@ -3944,7 +3944,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 82287364}
+      - m_Target: {fileID: 82287363}
         m_MethodName: BlueTank
         m_Mode: 1
         m_Arguments:

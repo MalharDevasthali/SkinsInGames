@@ -49,17 +49,17 @@ namespace UIServices
         public void BlueTank()
         {
             GameService.instance.SetCurrentTankType(TankServices.TankType.BlueTank);
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(2);
         }
         public void GreenTank()
         {
             GameService.instance.SetCurrentTankType(TankServices.TankType.GreenTank);
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(2);
         }
         public void RedTank()
         {
             GameService.instance.SetCurrentTankType(TankServices.TankType.RedTank);
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(2);
         }
     }
 }
